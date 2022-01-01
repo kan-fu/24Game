@@ -46,7 +46,14 @@ const Solver24 = () => {
       </Paper>
       <Grid container spacing={4} sx={{ mt: { xs: 3, md: 6 } }}>
         {problem.map((number, index) => (
-          <Grid container justifyContent='center' item key={index} xs={3}>
+          <Grid
+            container
+            justifyContent='center'
+            item
+            key={index}
+            xs={6}
+            sm={3}
+          >
             <TextField
               type='tel'
               value={number}
@@ -66,14 +73,18 @@ const Solver24 = () => {
         justifyContent='space-between'
         sx={{ my: { xs: 3, md: 6 } }}
       >
-        <Button onClick={handleRandom} variant='outlined' sx={{ px: 5 }}>
+        <Button
+          onClick={handleRandom}
+          variant='outlined'
+          sx={{ px: { xs: 2, md: 4 } }}
+        >
           Random
         </Button>
         <Button
           onClick={handleSolve}
           color='success'
           variant='outlined'
-          sx={{ px: 5 }}
+          sx={{ px: { xs: 2, md: 4 } }}
         >
           Solve
         </Button>

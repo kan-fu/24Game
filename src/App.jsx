@@ -29,8 +29,8 @@ const App = () => {
         component='main'
         maxWidth='false'
         sx={{
-          // height: '100vh',
-          mt: 6,
+          height: '100vh',
+          // mt: 6,
           width: '100vw',
           display: 'flex',
           alignItems: 'center',

@@ -154,7 +154,7 @@ const Game24 = () => {
           {spaceAroundOp(formula)}
         </Typography>
       </Paper>
-      <Grid container spacing={2} sx={{ my: { xs: 3, md: 6 } }}>
+      <Grid container spacing={2} sx={{ mt: { xs: 1, md: 2 } }}>
         {problem.map((number, index) => (
           <Grid container justifyContent='center' item key={index} xs={3}>
             <Fab
@@ -168,7 +168,7 @@ const Game24 = () => {
           </Grid>
         ))}
       </Grid>
-      <Grid container spacing={{ xs: 2, md: 4 }} sx={{ my: { xs: 3, md: 6 } }}>
+      <Grid container spacing={{ xs: 2, md: 4 }} sx={{ my: { xs: 1, md: 2 } }}>
         {operators.map((operator) => (
           <Grid
             container
